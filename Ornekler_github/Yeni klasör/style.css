@@ -1,0 +1,35 @@
+.acc{
+    border-radius: 3px;
+border:1px solid #999999;
+    width: 400px;
+    height: 30px;
+    padding: 15px;
+margin: 10px;
+}
+.buton{
+    padding:20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:lightskyblue;
+    border: none;
+    background-color:#6fa3f7;
+    border-radius: 5%;
+    margin-left: 38.5%;
+
+
+}
+.buton:hover{
+    background-color: #2a75ed;
+color: white;
+border-radius: 5%;
+    border:1px solid #999999;
+}
+.buton a:Hover{
+color: whitesmoke;
+    text-decoration: none;
+
+}
+.buton a{
+color:white;
+    text-decoration: none;
+}

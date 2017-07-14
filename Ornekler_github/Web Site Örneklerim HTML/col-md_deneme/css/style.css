@@ -1,0 +1,12 @@
+.border-red{
+height:400px;
+text-align: center;
+    border:solid 1px red;
+}
+.textlabel{
+float: left;
+text-align: center;
+width:20%;
+color:cadetblue;
+margin-bottom: 10px;    
+}

@@ -1,0 +1,133 @@
+
+<html>
+<head>
+       <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+<script>
+    
+    
+     function myFunction() {
+if(text3.value=="")
+ {
+    document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="Boş Yerleri Doldurunuz Lütfen";
+      document.getElementById("demo").style.color='red';
+            document.getElementById("text3").style.border.color='red';
+    
+        }
+
+        else{
+ document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="KAYIDINIZ OLUŞTURULUYOR";
+    
+            document.getElementById("demo").style.color='green';
+}
+
+if(text4.value=="")
+ {
+    document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="Boş Yerleri Doldurunuz Lütfen";
+          document.getElementById("text4").style.border.color='red';
+      document.getElementById("demo").style.color='red';
+        }
+
+        else{
+ document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="KAYIDINIZ OLUŞTURULUYOR";
+    
+    document.getElementById("demo").style.color='green';
+    
+}
+
+if(text5.value=="")
+ {
+    document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="Boş Yerleri Doldurunuz Lütfen";
+        document.getElementById("demo").style.color='red';
+              document.getElementById("text5").style.border.color='red';
+ }
+
+
+   
+        else{
+ document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="KAYIDINIZ OLUŞTURULUYOR";
+        document.getElementById("demo").style.color='green';
+    
+}
+
+if(text6.value=="")
+ {
+    document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="Boş Yerleri Doldurunuz Lütfen";
+      document.getElementById("demo").style.color='red';
+        document.getElementById("text6").style.border.color='red';
+        }
+
+        else{
+ document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="KAYIDINIZ OLUŞTURULUYOR";
+        document.getElementById("demo").style.color='green';
+    
+    
+}
+
+if(text7.value=="")
+ {
+    document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="Boş Yerleri Doldurunuz Lütfen";
+      document.getElementById("demo").style.color='red';
+          document.getElementById("text7").style.border.color='red';
+        }
+
+        else{
+ document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="KAYIDINIZ OLUŞTURULUYOR";
+        document.getElementById("demo").style.color='green';
+    
+}
+
+
+if(text8.value=="")
+ {
+    document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="Boş Yerleri Doldurunuz Lütfen";
+        document.getElementById("demo").style.color='red';
+          document.getElementById("text8").style.border.color='red';
+        }
+
+        else{
+ document.getElementById("demo").style.display='inline';
+      document.getElementById("demo").innerHTML="KAYIDINIZ OLUŞTURULUYOR";
+        document.getElementById("demo").style.color='green';
+    
+}
+
+
+
+
+}
+
+
+
+
+</script>
+</head>
+
+<body>
+
+<h2>Sign Up</h2>
+<input class="acc text3" type="text" id="text3" placeholder="Adınız">
+<input class="acc text4" type="text" id="text4" placeholder="Soyadınız"><br>
+<input class="acc text5" type="text" id="text5" placeholder="Telefon Numaranız">
+<input class="acc text6" type="text" id="text6" placeholder="Şehiriniz"><br>
+<input class="acc text7" type="email" id="text7" placeholder="E-mailiniz">
+<input class="acc text8" type="text" id="text8" placeholder="Yaşınız"><br>
+<button class="buton" type="button" onclick="myFunction()"><a href="#">Kayıt Ol</a></button>
+
+<p style="display:none;color:Red;" id="demo">Boş Yerleri Doldurunuz Lütfen</p>
+
+
+</body>
+</html> 
+

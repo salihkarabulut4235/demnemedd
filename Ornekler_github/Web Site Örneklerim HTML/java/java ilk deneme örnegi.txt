@@ -1,0 +1,45 @@
+
+
+<input type="text" id="sayi1">
+<br />
+<input type="text" id="sayi2">
+<div>TOPLAM=<span id="sonuc"></span></div>
+<input type="button"value="Topla" onclick="topla()">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function topla(){
+
+  var sayi1=document.getElementById("sayi1").value;
+  var sayi2=document.getElementById("sayi2").value;
+  sayi1=parseInt(sayi1)
+  sayi2=parseInt(sayi2)
+  document.getElementById('sonuc').innerHTML="<input type='text' readonly value='"+(sayi1*sayi2)+"'>"
+}
+
+
+var x=5,b=32;
+
+document.write(x*b);  
+
+</script>
+

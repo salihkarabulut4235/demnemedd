@@ -1,0 +1,184 @@
+.yukarikapsayici{
+padding-top: 8px;
+    width: 70%;
+margin-left: 15%;    
+background: url(C:/Users/DEV-3/Desktop/Almesan/images/arkaplan.png);
+height: 154px;  
+
+}
+.menu-logo{
+width: 20%;
+background-color: rebeccapurple;
+padding-left: 7px;
+
+}
+.menu{
+
+margin-top: 3%;
+    width: 60%; 
+    margin-left: 51.7%;
+border-radius: 5px;
+
+}
+.menu1{
+
+background-color: red;
+margin-top: 3%;
+    width: 60%; 
+    margin-left: 50.3%;
+border-radius: 5px;
+
+}
+
+.menudivi{
+ background: rgb(60,60,60);
+ 
+  background: rgba(60, 60, 60, .6);
+text-decoration: none;
+float: left;
+padding: 15px;
+
+}
+a{
+
+    transition: 1s;
+    text-decoration: none;
+}
+.menudivi a{
+    color:#edeff2;
+
+}
+.menudivi a:hover{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.icerik{
+
+ 
+
+}
+.aktif{
+background-color: #707070;
+color: #ffae89;
+
+}
+.width{
+
+
+    height: 500px;
+}
+.width1{
+
+float: center;
+    height: 480px;
+}
+
+.asagikapsayici{
+margin-top: 3%;
+    width: 70%;
+margin-left: 15%;    
+}
+.paddingg{
+
+    padding: 10px;
+}
+.arametin{
+    padding-top: 10px;
+
+
+
+
+
+
+
+
+margin-bottom: 20px;
+margin-left: 60%;
+}
+
+.metin{
+width: 70%; 
+padding-left: 8px;
+    border-radius: 4px;
+    border:1px solid gray;
+    background-color:#FFF;
+    height: 30px;
+    color: #505050;
+}
+
+.arkaplanurunler{
+
+background: url(C:/Users/DEV-3/Desktop/Almesan/images/arkaplan2.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.arkaplanuretim{
+
+background: url(../images/yanhaber/font.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.arkarenk{
+background-color: #fcf3d9
+
+
+}
+.altdiv{
+
+background-color: #606060;
+color: white;
+
+}
+
+.clear{clear:both;}
+.eng{
+text-decoration: none
+
+}
+.eng:hover{
+transition:1sn;
+color: gray;
+    text-decoration: none
+
+}
+.selcuklu{
+    width: 120px;
+    height: 32px;
+  
+    background:url("../images/logo-footer-selcuklu.png") top center no-repeat;
+        -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    margin-left: 55%;
+
+
+}
+
+
+.almesan{
+    width: 140px;
+    height: 45px;
+    background:url("../almesanlogo.jpeg") top center no-repeat;
+        -webkit-transition: all 10ms ease-in-out;
+    -moz-transition: all 10ms ease-in-out;
+    -o-transition: all 10ms ease-in-out;
+    -ms-transition: all 10ms ease-in-out;
+    transition: all 50ms ease-in-out;
+ float: center; 
+
+}
+.almesan:hover{
+    background-position: bottom center;
+}
+
+.selcuklu:hover{
+    background-position: bottom center;
+}

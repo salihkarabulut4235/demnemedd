@@ -1,0 +1,26 @@
+.anadiv{
+
+width: 62%;
+margin-left: 19%;
+background-color: red;
+height: 1200px;
+}
+.height-50{
+height:100px
+}
+.height-100{
+height:200px
+}
+
+.yellow{
+    background-color:yellow
+}
+
+.purple{background-color:purple}
+.red{background-color:red}
+.orange{background-color: orange}
+.green{background-color:green}
+.blue{background-color: aquamarine}
+.pink{background-color: pink}
+.item{border:solid 1px white}
+.darkblue{background-color: #324edb}

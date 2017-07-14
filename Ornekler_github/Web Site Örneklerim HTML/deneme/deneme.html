@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>deneme yaptıgım html</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button class="button" id="sanane" style="padding:20px;">bana tıkla ve olanları gör :)))</button>
+  <div id="yazmak">yazı deneme</div>
+  <div id="goster-menu">2.tıklamada width'i 800px olsun rengi mavi</div>
+  <div id="deneme" class="yellow">BENİM YAZI RENGİM KIRMIZI OLSAYDIve keske width'im 400px height'im 400px olsa</div>
+
+
+</body>
+
+</html>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+  
+  $('#goster-menu').on('click', function () {
+
+    $('#deneme').removeClass('yellow');
+    $('#deneme').addClass('red');
+$('#deneme').html("selam");
+$('#deneme').add();
+
+  });
+  $('#goster-menu').on('dblclick', function () {
+
+alert("2 defa dive tıkladın :))");
+
+
+    $('#deneme').addClass('red2');
+    $('#sanane').removeClass('button');
+
+  });
+  $("button").on("click", function(){
+$('#deneme').removeClass('red2');
+$("body").addClass('boya');
+  });
+
+
+</script>

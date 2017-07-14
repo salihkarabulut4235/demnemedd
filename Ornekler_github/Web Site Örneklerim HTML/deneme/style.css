@@ -1,0 +1,115 @@
+.gizle{
+  width: 200px;
+height: 300px;
+border: 1px solid;
+}
+#goster-menu{
+  width: 200px;
+height: 300px;
+background-color: gray;
+
+}
+
+
+.display-none{
+  display:none;
+}
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: lightskyblue;
+  height: 400px;
+  width: 400px;
+  color:white;
+}
+
+.red2{
+  background-color:black;
+  height: 400px;
+  width: 800px;
+  transition:10s;
+}
+.mavi-alan{
+  color: greenyellow;
+  background-color: lightpink;
+  transition: 10s;
+}
+
+.yesil-alan{
+  color: gray;
+  background-color: lightgreen;
+}
+.button{
+  display: none;
+}
+.boya{
+
+  background-color: red;
+}
+.deleted{
+transition: 10s;
+display: none;
+
+}
+.menudivi{
+  transition: 10s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#click4{
+
+  transition: 10s;
+}
+
+.height-pc{
+  height: 90px;
+}
+.mendivi{
+  padding: 20px;
+  border-bottom: 1px solid thistle;
+  background-color: grey;
+
+}
+.padding-pc{
+
+  padding: 20px;
+}
+.mendivi-pc{
+float: left;
+  padding: 20px;
+  border-bottom: 1px solid thistle;
+  background-color: grey;
+
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+
+@media screen and (min-width:800px){
+
+.denemeclick{
+  display: none;
+}
+
+.menudivi{
+  display: none;
+
+}
+.mendivi{
+  display: none;
+}
+}
+@media screen and (max-width:800px){
+
+.mendivi-pc{
+  display: none;
+}
+.padding-pc{
+  display: none;
+}
+
+}
+

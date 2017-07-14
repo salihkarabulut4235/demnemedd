@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>UstaDerslik</title>
+	<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		
+				$("#resim").change(function(){//eğer file değişirse
+					var resim=document.getElementById ("resim");//resime eriş
+					
+					if (resim.files && resim.files[0]){//eğer dosya var ise
+						var veri=new FileReader();//veri okuma apisi başlatıyoruz.
+						veri.onload=function() {//altta readAsDataURL verileri okuyoruz.O okuma tamamladığın da
+							var adres=veri.result;//veriyi al
+							$('.onizleme').html('<img src="'+adres+'"/>');//resim olarak çizdir.
+						}
+						
+						veri.readAsDataURL(resim.files[0]);//veri okuma
+					}
+				});
+				
+		})
+	</script>
+</head>
+<body>
+
+		<input type="file" id="resim" />
+		<div class="onizleme"></div>
+
+</body>
+</html>

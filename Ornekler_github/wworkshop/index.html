@@ -1,0 +1,222 @@
+<html>
+<head>
+    <title>ADMİN SAYFASI</title>
+      <link rel="stylesheet" href="css/uikit.min.css" />
+      <link rel="stylesheet" href="css/style.css" />  
+      
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+      <script>
+var IE = document.all ? true : false;
+if (!IE) document.captureEvents( Event.MOUSEMOVE )
+document.onmousemove = getMouseXY;
+
+var tempX = 0;
+var tempY = 0;
+function getMouseXY(e) {
+  
+  // browser'a mouse koordinatlari yakalaniyor ve degiskenlere aktariliyor..
+  if (IE) {
+    tempX = event.clientX + document.body.scrollLeft;
+    tempY = event.clientY + document.body.scrollTop;
+     $('#denemew').css("top",tempY)
+     $('#denemew').css("left",tempX)
+  }else {
+    tempX = e.pageX;
+    tempY = e.pageY;
+     $('#denemew').css("top",tempY-50)
+     $('#denemew').css("left",tempX-50)
+  }
+  // eger negatif degerlerde ise 0 ataniyor
+  if (tempX < 0){tempX = 0;}
+  if (tempY < 0){tempY = 0;}
+  // degerler dokumanda yazdiriliyor..
+  document.Show.MouseX.value = tempX;
+  document.Show.MouseY.value = tempY;
+  return true;
+}   
+        
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+
+
+}
+setTimeout(function() {
+  $("#colorpad").css("background-color",getRandomColor());
+  
+}, 300);
+setTimeout(function() {
+  $("#colorpad2").css("background-color",getRandomColor());
+  
+}, 300);
+setTimeout(function() {
+  $("#colorpad3").css("background-color",getRandomColor());
+  
+}, 300);
+setTimeout(function() {
+  $("#colorpad4").css("background-color",getRandomColor());
+  
+}, 300);
+setTimeout(function() {
+  $("#colorpad5").css("background-color",getRandomColor());
+  
+}, 300);
+setTimeout(function() {
+  $("#colorpad6").css("background-color",getRandomColor());
+  
+}, 300);
+
+function setRandomColor() {
+  $("#colorpad").css("background-color", getRandomColor());
+  
+}
+
+
+function setRandomColor1() {
+  $("#colorpad2").css("background-color", getRandomColor());
+    $("#colorpad2").css("color","white");
+        $("#colorpad2").css("text-align","center");
+         $("#colorpad2").css("height","50px");
+  
+}
+function setRandomColor2() {
+  $("#colorpad3").css("background-color", getRandomColor());
+    $("#colorpad3").css("color","white");
+        $("#colorpad3").css("text-align","center");
+               $("#colorpad3").css("height","50px");
+}
+function setRandomColor3() {
+  $("#colorpad4").css("background-color", getRandomColor());
+    $("#colorpad4").css("color","white");
+        $("#colorpad4").css("text-align","center");
+               $("#colorpad4").css("height","50px");
+}
+function setRandomColor4() {
+  $("#colorpad5").css("background-color", getRandomColor());
+    $("#colorpad5").css("color","white");
+        $("#colorpad5").css("text-align","center");
+               $("#colorpad5").css("height","50px");
+}
+function setRandomColor5() {
+  $("#colorpad6").css("background-color", getRandomColor());
+    $("#colorpad6").css("color","white");
+        $("#colorpad6").css("text-align","center");
+               $("#colorpad6").css("height","50px");
+}
+ 
+
+
+ $("#denemew").css("margin-left",tempY);
+  $("#denemew").css("margin-top",tempX);
+
+
+    audio = new Audio();
+
+     
+    audio.src = "audio.3mp3";
+
+     
+
+    audio.loop = true;
+
+     
+
+    audio.play();
+
+
+
+
+$("no").click(function(e) {
+   audio.play("stop");
+});
+
+      </script>
+</head>
+
+
+<body id="colorpad">
+
+<nav class="  uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <ul class="deneme uk-navbar-nav">
+            <a href="#offcanvas-slide" class="uk-button uk-button-default" style="height:40px;margin-top:20px;" uk-toggle>AÇ</a>
+            <li class="uk-active"><a href="#">Anasayfa</a></li>
+            <li>
+                <a href="#">Kullanıcılar</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Randevular</a></li>
+                        <li><a href="#">Yönetim</a></li>
+                        <li><a href="#">Üyeler</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">İçerikler</a></li>
+            <form class="uk-search uk-search-default">
+  
+</form>
+        </ul>
+<form style="border: 0;font-size:12" name="Show"><input type="text" name="MouseX" size="4" class="i"><b>X</b><input type="text" name="MouseY" size="3" class="i"></form>
+    </div>
+     <div class="sag"  style="width:25%;border:1px;margin-left:40%;">  <input class="uk-search-input" type="search"  style="height:40px;margin-top:20px;margin-left:-40px;"  placeholder="Search..."></div>
+</nav>
+
+<div id="denemew" style=" width:50px;height:50px;position:absolute;" ><img src="Preloader_9/Preloader_9.gif"></div>
+<div id="offcanvas-slide"  uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+<a href="#offcanvas-slide" id="colorpad"  class="uk-button uk-button-default" uk-toggle>Kapat</a>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#">Active</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-header">Header</li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Item</a></li>
+        </ul>
+
+    </div>
+</div>
+  
+
+<div>
+<div style="width:20px;height:40px;" class="no"><img src="no.png"></div>
+    <button onclick="setRandomColor(),setRandomColor1(),setRandomColor2(),setRandomColor3(),setRandomColor4(),setRandomColor5()">Random Color</button>
+    <span  style="float:left;position:absolute; width:91.5%;" id="deneme123" class="uk-label ">Default</span>
+</div>
+
+<div style="clear:both"></div>
+<div class="uk-child-width-1-2@m uk-grid-match" uk-grid >
+    <div>
+        <div style="float:left;margin-top:400px;" title="admin"  class="uk-card uk-card-default uk-card-body" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <h3 class="uk-card-title">SALİH</h3>
+            <p>Admin Paneline Hoşgeldin !</p>
+        </div>
+    </div>
+
+</div>
+<br>
+
+<div class="uk-width-1-5" style=" border:1px solid;float:left;" id="colorpad2"  >:p</div>
+<div class="uk-width-1-5" style=" border:1px solid;float:left;" id="colorpad3"  >reas</div>
+<div class="uk-width-1-5" style=" border:1px solid;float:left;" id="colorpad4"  >sdfdsfsdsd</div>
+<div class="uk-width-1-5" style=" border:1px solid;float:left;" id="colorpad5"  >:p</div>
+<div class="uk-width-1-5" style=" border:1px solid;float:left;" id="colorpad6"  >reas</div>
+
+
+</body>
+
+
+</html>
+
+
+
+

@@ -1,0 +1,22 @@
+figure {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+figure .mpnqlPlaceholder {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+figure .placeholder {
+  display: block;
+}
+figure .img-responsive.loading {
+  position: absolute;
+}
+.js-mpnql {
+  filter: blur(10px);
+  
+}

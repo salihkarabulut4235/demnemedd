@@ -1,0 +1,179 @@
+﻿.logodiv{
+height: 50px;
+background-color:#222222;
+color: gray;
+width: 100%;
+}
+.marka{
+   width:10%;
+ 
+    text-align:left;
+    padding: 14px;
+    text-align: center;
+    float: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:12pt;
+}
+.menudivleri{
+   width:7%;
+
+    text-align:left;
+    padding: 14px;
+    text-align: center;
+    float: left;
+}
+.menudivleri a{
+color:#339966;
+ transition: 1s;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.menudivleri a:hover{
+color: white;
+ transition: 1s;
+    text-decoration: none;
+}
+.ortadiv{
+width: 100%;
+height: 280px;  
+background-color: gray;   
+}
+
+.altbaslik{
+width:100%;
+height:60px;
+margin-top:25px;
+}
+.altbaslik h1{
+text-align:center;
+font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+color:white;
+}
+
+.border{
+border:1px solid #eaedf2;
+width:50%; 
+margin-left:25%;
+margin-top:5px;
+}
+.kücükaltbaslik{
+width:100%;
+height:60px;
+margin-top:25px;
+}
+.arabosluk{
+
+    color: gray;
+    width: 100%;
+    height: 60px;
+}
+.kücükaltbaslik h3{
+text-align:center;
+font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+color:white;
+}
+.altdiv{
+width: 92%;
+height: auto;
+background-color: cornflowerblue;
+
+margin-left: 4%;
+
+}
+.center{
+    margin-top: 15px;
+    padding: 100px;
+border:10px solid cornflowerblue;
+background-color: #888888;
+
+    text-align: center;
+}
+.aktif{
+background-color:#444444;
+color: gold;
+
+}
+.ortadiviletisim{
+margin-left: 15%;
+width: 70%;
+
+background-color: gray;  
+
+}
+.bosluk{
+
+width: 100%;
+height: 15px;
+
+}
+.ortadiviletisim h1{
+    text-align: center;
+    color :wheat;
+}
+.borderh1{
+border-bottom: 3px solid wheat;
+border-radius: 10px;
+width:50%; 
+margin-left:25%;
+margin-top:5px;
+}
+.centerr{
+margin-left: 15%;
+width: 70%;
+background-color: red;
+}
+.iletisim-buton{
+    float:right;
+    border:none;
+    background-color:#42a1f4;
+    padding:10px;
+    color: white;
+    border-radius:5px;
+}
+.iletisim-buton:hover{
+ padding:10px;
+    border-radius:5px;
+   background-color: #0a5bff;
+   float:right;
+    border:none;
+    color:whitesmoke;
+}
+.back{
+
+
+    background-image: url(font.jpg);
+}
+
+.ortadivhakkında{
+
+
+
+    background-color: white;
+    opacity: 0.3;
+    width: 60%;
+margin-left: 20%;
+height: 800px;
+}
+.ortadivhakkında2{
+
+
+
+    background-color: white;
+    opacity: 0.3;
+    width: 60%;
+margin-left: 20%;
+height: 50px;
+}
+
+.ortadivhakkında  h2{
+color: deepskyblue;
+margin-left: 12%;
+border-bottom: 1px dotted black;
+
+width: 60%;
+}
+.ortadivhakkında  p{
+color: gray;
+margin-left: 12%;
+width: 60%;
+}

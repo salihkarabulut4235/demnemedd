@@ -1,0 +1,15 @@
+_messages = {
+	'general_ko'					:	'Internal error, please try again later',
+	'required'						: 'Please fill in the required fields',
+	'file_ko'	 		        : 'Select file from your computer',
+	'invalid_email'				: 'Invalid email',
+	'privacy_ko'					: 'Please accept privacy terms',
+	'subscribe_ok'				: 'Your registration was successful.',
+	'subscribe_ko'				: 'Error during registration, try again later',	
+	'contact_ok'					: 'Thank you, your request was successfully sent. We will get back to you soon.',
+	'contact_ko'					: 'Internal error, please try again later',
+	'reload_ko'						:	'An error occurred during upload. Please refresh the page to continue',
+	///
+	
+};
+

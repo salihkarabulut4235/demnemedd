@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Baslık deneme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div style="width:100%;background-color:lightpink;" id="menu" class="menudiv height-pc">
+        <div class="padding-pc">
+      <a href="#"><div class="mendivi-pc">Anasayfa</div></a>
+        <a href="#"><div class="mendivi-pc">Kaydıraklar</div></a>
+         <a href="#"><div class="mendivi-pc">Aktiviteler</div></a>
+          <a href="#"><div class="mendivi-pc">MultiMedya</div></a>
+           <a href="#"><div class="mendivi-pc">Fiyatlar</div></a>
+            <a href="#"><div class="mendivi-pc">SSS</div></a>
+               <a href="#"><div class="mendivi-pc">Harita</div></a>
+             <a href="#"><div class="mendivi-pc">Haberler</div></a>
+           <a href="#"><div class="mendivi-pc">İletişim</div></a>
+        <a href="#"><div class="mendivi-pc">Hakkımızda</div></a>
+        </div>
+        <div  id="click4"  style="padding:20px;width:60px;background-color:lightblue;height:50px;" class="denemeclick"><a href="#"  id="click4"><i style="float:center;font-size:40px;    margin-left: 10px;margin-top:5px;" class="fa fa-bars" id="click4" aria-hidden="true"></i></a></div>
+        <div  id="click5" style="padding:20px;width:60px;background-color:lightblue;height:50px;    " class="denemeclick deleted"><a href="#"><i style="float:center;font-size:40px;    margin-left: 10px;margin-top:5px;" class="fa fa-times" aria-hidden="true"></i></a></div>
+
+
+
+    </div>
+    <div id="menudivi" class="deleted" style="background-color:lightslategrey;">
+        <a href="#"><div class="mendivi">Anasayfa</div></a>
+        <a href="#"><div class="mendivi">Kaydıraklar</div></a>
+         <a href="#"><div class="mendivi">Aktiviteler</div></a>
+          <a href="#"><div class="mendivi">MultiMedya</div></a>
+           <a href="#"><div class="mendivi">Fiyatlar</div></a>
+            <a href="#"><div class="mendivi">SSS</div></a>
+               <a href="#"><div class="mendivi">Harita</div></a>
+             <a href="#"><div class="mendivi">Haberler</div></a>
+           <a href="#"><div class="mendivi">İletişim</div></a>
+        <a href="#"><div class="mendivi">Hakkımızda</div></a>
+        
+
+    </div>
+</body>
+
+
+
+
+
+
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
+<script src="js/lightbox.js"></script>
+<script>
+    $("#click4").on("click",400, function () {
+
+        $('#menudivi').removeClass("deleted",1000);
+    $('#menudivi').removeClass(1000);
+        $("#click4").addClass("deleted");
+        $("#click5").removeClass("deleted");
+$("#menudivi>*").css("color","white")
+$('a[name="deneme"]').css("color","whitesmoke");
+
+    });
+
+    $("#click5").on("click",400, function () {
+
+        $('#menudivi').addClass("deleted");
+        $("#click4").removeClass("deleted");
+        $("#click5").addClass("deleted");
+
+
+    });
+    
+        
+</script>

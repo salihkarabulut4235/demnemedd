@@ -1,0 +1,13 @@
+git clone projeadresi
+
+git status --> yapýlan deðiþiklikleri gör
+
+git add * --> Tüm deðiþiklikleri ekle
+
+git commit -m "mesaj" --> Yaptýðýn deðiþikliðe mesaj ata
+
+git push --> Sunucuya Kaydet
+
+
+
+git pull --> Son deðiþiklikleri kendi bilgisayarýna aktar.

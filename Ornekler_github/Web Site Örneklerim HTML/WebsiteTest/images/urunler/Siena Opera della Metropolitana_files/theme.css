@@ -1,0 +1,66 @@
+.white, a.white, a.white:hover{
+	color: #fff !important;
+}
+.black, a.black, a.black:hover{
+	color: #000 !important;
+}
+.grey, a.grey, a.grey:hover{
+	color: #aaaaaa !important;
+}
+.brand, a.brand, a.brand:hover{
+	color: #a57704 !important;
+}
+.bg_white{
+	background-color: #fff !important;
+}
+.bg_black{
+	background-color: #000 !important;
+}
+.bg_onyx{
+	background-color: #131313 !important;
+}
+.bg_brand{
+	background-color: #a57704 !important;
+}
+.bg_light{
+	background-color: #f7f8fb !important;
+}
+.bg_light_alternate{
+	background-color: #e6e8eb !important;
+}
+.bg_grey{
+	background-color: #E9E5EB !important;
+}
+.bg_footer{
+	background-color: #F0F0F0 !important;
+}
+.bg_brand_type_1{
+	background-color: #CDA759 !important;
+}
+.bg_brand_type_2{
+	background-color: #C39B4B !important;
+}
+.bg_brand_type_3{
+	background-color: #B58937 !important;
+}
+.bg_brand_type_4{
+	background-color: #A57627 !important;
+}
+.bg_transparent{
+	background-color: transparent !important;
+}
+.border-white{
+	border-color: #fff !important;
+}
+.border-grey{
+	border-color: #c1c1c1 !important;
+}
+.border-black{
+	border-color: #000 !important;
+}
+.border-brand{
+	border-color: #a57704 !important;
+}
+.border-light{
+	border-color: #d8e4e7 !important;
+}

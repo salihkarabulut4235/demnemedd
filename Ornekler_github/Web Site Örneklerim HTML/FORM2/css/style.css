@@ -1,0 +1,138 @@
+.logodiv{
+   
+   background-color: #bc0d4d;
+height: 40px;
+
+
+
+}
+.logadiv{
+border: 1px solid black;
+
+
+
+
+}
+.menu{
+    background-color:#4E5D6C;
+    width:100%;
+    height:40px
+}
+.menu-name{
+   margin-left: 2%;
+   
+}
+.menu a{
+text-decoration: none;
+}
+.menu a:hover{
+text-decoration: none;
+     background-color: #485563;
+
+}
+.menu-name:hover{
+ color:white;
+ background-color: #485563;
+  
+}
+.menu .logo{
+    line-height:40px;
+    float:left;
+    width:5%;
+    color:white;
+
+}
+.menu .menu-icerik{
+    line-height:40px;
+    width:95%;
+    float:left;
+
+}
+
+.clear{clear:both}
+.aktif{
+
+color: pink;
+}
+.mid{
+height: 200px;
+
+width: 100%;
+
+
+}
+.b{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: left;
+color: white;
+}
+
+.mid-label{
+font-size: 12pt;
+font-family:'Times New Roman', Times, serif;
+text-align: left;
+color: white;
+}
+
+
+.tanitim{height:200px;background-color: #485563;padding-top:60px}
+
+
+.mid-icerik{
+width: 100%;    
+background-color: #455553;
+
+
+}
+.menum{
+ 
+background-color: gray;
+    width: 100%
+
+
+}
+.menudrop{
+
+    
+}
+.menudrop:hover
+{
+
+    background-color: black;
+}
+
+.icerik{color:white;margin-top:10px}
+.thumbnail2{
+
+height: auto;
+
+}
+.buton{
+margin-left: 80px;
+
+      background-color: rebeccapurple;
+  float: center;    
+}
+.aciklamadiv{
+
+width: 100%;
+background-color: #a80606;
+color:wheat;
+float: top;
+
+
+}
+.aciklamadiv2{
+
+width: 100%;
+background-color: gray;
+color:white;
+
+
+}
+.paddinng{
+
+padding:  20px 20px 20px 20px;
+background-color: gray;
+
+}

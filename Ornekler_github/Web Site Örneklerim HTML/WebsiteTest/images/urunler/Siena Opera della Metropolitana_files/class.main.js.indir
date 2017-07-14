@@ -1,0 +1,191 @@
+var Main = {
+	initialize: function(){
+		Main.initGeneral();
+		
+		if($("#map").length){
+			Main.initContactMap();
+		}
+	},
+	
+	//GENERAL
+	initGeneral: function(){
+		if ($(window).width() > 768) {
+			$(window).scroll(function () {
+		    if ($(window).scrollTop() > 190) {
+		      $('#nav_bar').addClass('navbar-fixed');
+		      $('header').css('padding-bottom', '73px');
+		    }
+		    if ($(window).scrollTop() < 191) {
+		      $('#nav_bar').removeClass('navbar-fixed');
+		      $('header').css('padding-bottom', '0');
+		    }
+		  });
+		}
+		$('ul.nav li.dropdown').hover(function() {
+		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+		}, function() {
+		  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+		});
+		
+		var ModalEffects = (function() {
+
+			var overlay = document.querySelector( '.md-overlay' );
+	
+			[].slice.call( document.querySelectorAll( '.md-trigger' ) ).forEach( function( el, i ) {
+	
+				var modal = document.querySelector( '#' + el.getAttribute( 'data-modal' ) ),
+					close = modal.querySelector( '.md-close' );
+	
+				function removeModal( hasPerspective ) {
+					classie.remove( modal, 'md-show' );
+	
+					if( hasPerspective ) {
+						classie.remove( document.documentElement, 'md-perspective' );
+					}
+				}
+	
+				function removeModalHandler() {
+					removeModal( classie.has( el, 'md-setperspective' ) ); 
+				}
+	
+				el.addEventListener( 'click', function( ev ) {
+					classie.add( modal, 'md-show' );
+					overlay.removeEventListener( 'click', removeModalHandler );
+					overlay.addEventListener( 'click', removeModalHandler );
+	
+					if( classie.has( el, 'md-setperspective' ) ) {
+						setTimeout( function() {
+							classie.add( document.documentElement, 'md-perspective' );
+						}, 25 );
+					}
+				});
+	
+				close.addEventListener( 'click', function( ev ) {
+					ev.stopPropagation();
+					removeModalHandler();
+				});
+
+		} );
+
+	})();
+
+
+	},
+	initContactMap: function(){
+  	var map;
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 43.3177058, lng: 11.3301114},
+			scrollwheel: false,
+		  draggable: false,
+/*
+		  navigationControl: false,
+		  mapTypeControl: false,
+		  scaleControl: false,
+*/
+      zoom: 17,
+      
+      styles:[
+					    {
+					        "featureType": "all",
+					        "elementType": "all",
+					        "stylers": [
+					            {
+					                "saturation": "-33"
+					            },
+					            {
+					                "lightness": "10"
+					            },
+					            {
+					                "hue": "#ffac00"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "administrative.locality",
+					        "elementType": "labels.text.fill",
+					        "stylers": [
+					            {
+					                "color": "#9c5e18"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "landscape.natural.terrain",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "visibility": "simplified"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.highway",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "visibility": "simplified"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.highway",
+					        "elementType": "labels.text",
+					        "stylers": [
+					            {
+					                "visibility": "on"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "road.arterial",
+					        "elementType": "geometry",
+					        "stylers": [
+					            {
+					                "visibility": "simplified"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "transit.line",
+					        "elementType": "all",
+					        "stylers": [
+					            {
+					                "visibility": "off"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "water",
+					        "elementType": "geometry.fill",
+					        "stylers": [
+					            {
+					                "saturation": "-23"
+					            },
+					            {
+					                "gamma": "2.01"
+					            },
+					            {
+					                "color": "#f2f6f6"
+					            }
+					        ]
+					    },
+					    {
+					        "featureType": "water",
+					        "elementType": "geometry.stroke",
+					        "stylers": [
+					            {
+					                "saturation": "-14"
+					            }
+					        ]
+					    }
+					]
+    });
+   },
+
+	//
+	foo: null
+}
+
+$(document).ready(function(){
+  Main.initialize();
+});

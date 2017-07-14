@@ -1,0 +1,13 @@
+.main{
+
+    background:url(https://t2.rbxcdn.com/408ef5773d83924fc66b8d4ac6cc0ed6);
+    margin-left: 15%;
+    width: 70%;
+    padding:2%;
+    border:1px solid #999999;
+    height: 550px;
+}
+.border{
+    height:100px;
+    background-color: black;
+}

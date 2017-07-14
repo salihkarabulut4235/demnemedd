@@ -1,0 +1,18 @@
++html (lazým ve daha biþeyler var)
++css (lazým ve daha biþeyler var)
+-responsive(mobil[bootstrap ve deðiþik sitelerden bakýlýcak])
+-javascript(bilmiyorum)
++bootstrap(eh iyi gibi ama deðil)
++font-awesome(küçük bir uygulama deðil ama kolay)
+-materiliaze(tasarým en son zamanlarda bakýlýcak )
++github(bakýldý 2-3 kere ögrenilicek)
+
+
+
+
+
+
+http://tr.lipsum.com/
+https://www.w3schools.com/
+http://getbootstrap.com/
+http://fontawesome.io/

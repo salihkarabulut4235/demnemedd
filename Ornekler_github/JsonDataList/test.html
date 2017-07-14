@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--developed by Resul Rıza DOLANER-->
+<!--www.resuldolaner.com-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Get Json Data</title>
+	<button onClick='cekBaby()'>ÇEK BEBEĞİM</button>
+	<button onclick="butonEkle()">Yeni buton</button>
+	<div id="butonyeri"></div>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	   	     <script>
+			 var sayi=1;
+			 function butonEkle(){
+				$('#butonyeri').append("<h"+sayi+">TEKBİR</h"+sayi+"><button id='buton_"+sayi+"' class='allahuekber'>"+sayi+" Salih</button><br>")
+				sayi=sayi+1;
+				if (sayi>6){
+					sayi=1;
+				}
+			 }
+			 
+
+			 function cekBaby(){
+			 
+				var url = 'data.json';
+                $.getJSON(url, function (ogrenciler) {
+				console.log(ogrenciler)
+				
+                    for (var i = 0; i < ogrenciler.length; i++) {
+                        if (ogrenciler[i].muslumanMi ==true) 
+						{
+                            document.write(ogrenciler[i].ogrenciId + " " + ogrenciler[i].muslumanMi + " " + ogrenciler[i].ogrenciSoyadi + " " + ogrenciler[i].okulAdi +
+                                " " + ogrenciler[i].enstituAdi + "<br>");
+                        }
+                    }
+                });
+			 }
+            $(document).ready(function () {
+				
+            });
+			
+			
+			document.getElementById("demo").innerHTML = "Hello JavaScript";
+        </script>
+</head>
+
+<body>
+    
+
+
+	
+	
+</body>
+
+</html>

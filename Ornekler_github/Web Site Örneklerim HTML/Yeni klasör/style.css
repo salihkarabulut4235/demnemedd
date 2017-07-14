@@ -1,0 +1,123 @@
+ .kapsayici{
+ 
+ width:810px;
+ height:850px;
+ }
+.yukarikapsayici
+{
+width:800px;
+height:180px;
+background-color:#29A4E1;
+float:center;
+margin:auto;
+}
+.logo
+{
+width:250px;
+height:180px;
+background-color:#29A4E1;
+float:left;
+}
+.menu
+{
+width:550px;
+height:40px;
+ float:right;
+ margin:auto;
+ background-color:gray;
+ text-decoration:none;
+ 
+ 
+}
+
+a{
+color:white;
+background-color:gray;
+text-decoration:none;
+}
+
+
+.menudvi
+{
+
+padding-top:10px;
+height:30px;
+float:left;
+margin-left:22px;
+background-color:gray;
+}
+.main{
+width:70%;
+margin-left:15%;
+border:solid;
+}
+.sol{
+width:30%;
+border:solid;
+float:left;
+}
+.sag{
+width:70%;
+float:left;
+bordeR:solid;
+}
+
+.altresimdiv
+{
+float:right;
+width:550px;
+height:140px;
+
+}
+
+.asagikapsayici
+{
+width:800px;
+background-color:#909090 ;
+	height:600px;
+margin-left:Auto;
+margin-right:auto;
+border-bottom:solid 3px orange;
+}
+
+.yandiv
+{
+width:250px; 
+background-color:#999999;
+height:500px;
+color:white;
+size:3;
+margin-right:10px;
+text-align:center-left;
+
+}
+.ortadiv{
+
+width:550px;
+height:520px;
+float:right;
+background-color:gray;
+}
+.middle-text{color:white;font-size:16px;
+padding-left:20px;
+}
+
+
+.yan1
+{
+
+float:left;
+width:50%;
+height:100%;
+background-color:#404040;
+
+
+}
+.yan2
+{
+float:left;
+width:274px;
+height:100%;
+background-color:#404040;
+border-left:1px solid white;
+}

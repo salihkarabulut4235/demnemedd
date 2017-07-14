@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif !important;
+  
+background-color: #c2ebf8;
+transition: background-color 1s;   
+}
+body hover{
+background-color: #77d9f8;
+transition: 5s;    
+}
+
+.main{
+height: 900px;
+border:1px solid #E9EBEE;
+ width: 70%;
+ margin-left: 15%;
+}
+.resim{
+
+    float:left;
+margin-left: 10px;
+width: 20%;
+
+}
+.sag{
+background-color: #fff8d6;
+    float:left;
+
+width: 80%;
+
+}
+.text{
+border-radius: 6px;
+border:none;
+float: right;
+margin-right: 30px;
+margin-top: 30px;
+height: 30px;
+padding: 8px;
+}
+.logo{
+margin-top: 2%;
+    height: 150px;
+     
+}
+
+
+.menudiv{
+float: left;
+line-height:60px;
+margin-right:20px;
+
+widows: 10%;    
+}
+.menudiv a{
+    color:#715c5c;
+    font-size:21px;
+}
+.menudiv a:hover{
+    text-decoration:none;
+    color:#ff7f7f;
+}
+.menu{
+    height: 60px;
+    background-color: white;
+}
+.icerik{
+
+background-color: white;
+
+margin-top:30px;
+ color:#715c5c;
+}
+
+.alt-icerik h1{
+
+float: left;
+margin-left: 20px;
+font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.alt-icerik{
+    
+    width: 100%;
+margin-top:30px;
+ color:#715c5c;
+
+}
+.h3{
+float:left;
+margin-left: 40px;
+padding-bottom: 5px;
+border-bottom:3px solid gray;
+}
+.icerik h4{
+
+
+
+margin-left: 60px;
+
+}
+
+.margin{
+
+
+
+margin-left: 60px;
+
+}
+.firstdiv{
+margin-top:60px;
+
+
+}
+
+.firstdiv:hover{
+
+
+    margin-top:60px;
+    opacity:0.8;
+}
+.seconddiv:hover{
+
+
+
+    opacity:0.8;
+}

@@ -1,0 +1,261 @@
+<html>
+
+<head>
+
+    <title>İş Başvurusu</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body class="arkaplan">
+
+    <div class="logodiv">
+        <h1>Başvuru Formu</h1>
+    </div>
+
+        
+        
+
+    <form class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The AdSoyad field is required." id="AdSoyad" maxlength="60"
+                    name="AdSoyad" placeholder="Ad Soyad *" required="required" type="text" value="" aria-required="true">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The TC field is required." id="tcno" minlength="11" name="TC"
+                    placeholder="TC Kimlik No *" required="required" type="text" value="" aria-required="true">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The DogumYeri field is required." id="AdSoyad" maxlength="60"
+                    name="dogumtarihi" placeholder="Doğum Yeri *" required="required" type="text" value="" aria-required="true">
+            </div>
+            <div class="col-md-2">
+                <div class=" " style="line-height:36px">Dogum Tarihiniz</div>
+
+            </div>
+            <div class="col-md-4">
+                <input class="form-control" data-val="true" data-val-required="dogum tarihi" id="dogumt" minlength="11" name="TC" required="required"
+                    type="date" value="" aria-required="true"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-3">Cinsiyet </div>
+                    <input data-val="true" name="r" required="required" type="radio" value="Erkek" aria-required="true">Erkek
+                    <input data-val="true" style="margin-left:20px;" name="r" required="required" type="radio" value="Kadın" aria-required="true">Kadın
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The Uyruk field is required." id="uyruk" minlength="150" name="TC"
+                    placeholder="Uyruk *" required="required" type="text" value="" aria-required="true">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input class="form-control" data-val="true" data-val-required="The evadresi field is required." id="evad" maxlength="60"
+                    name="Ev Adresiniz" placeholder="Ev Adresiniz *" required="required" type="text" value="" aria-required="true">
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The evtel field is required." id="evtel" maxlength="100" name="evtel"
+                    placeholder="Ev Telefon No *" required="required" type="text" value="" aria-required="true">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The ceptel field is required." id="ceptel" name="ceptel" placeholder="Cep Telefon No*"
+                    required="required" type="text" value="" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The epostaadresi field is required." id="eposta" maxlength="100"
+                    name="eposta" placeholder="E-Posta Adresiniz *" required="required" type="email" value="" aria-required="true">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The ulasma field is required." id="ulasma" name="ulasma" placeholder="Ulaşılmadığında Aranıcak Kişinin Tel No*"
+                    required="required" type="text" value="" aria-required="true">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"><label>Seyehat Engeliniz Varmı?*</label> </div>
+                    <input data-val="true" name="seyehatengeli" required="required" type="radio" value="Evet" aria-required="true">Evet
+                    <input data-val="true" style="margin-left:20px;" name="seyehatengeli" required="required" type="radio" value="Hayır" aria-required="true">Hayır
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"><label>Sigara Kullanıyomusunuz?</label> </div>
+                    <input data-val="true" name="sigara" required="required" type="radio" value="Evet" aria-required="true">Evet
+                    <input data-val="true" style="margin-left:20px;" name="sigara" required="required" type="radio" value="hayır" aria-required="true">Hayır
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"><label>Medeni Haliniz?*</label> </div>
+                    <input data-val="true" name="medenihal" required="required" type="radio" value="Bekar" aria-required="true">Bekar
+                    <input data-val="true" style="margin-left:20px;" name="medenihal" required="required" type="radio" value="Evli" aria-required="true">Evli
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"><label>Aktif Olarak Araç Kullanıyomusunuz?*</label> </div>
+                    <input data-val="true" name="arabakullanma" required="required" type="radio" value="Evet" aria-required="true">Evet
+                    <input data-val="true" style="margin-left:20px;" name="arabakullanma" required="required" type="radio" value="hayır" aria-required="true">Hayır
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"><label>Sürücü Belgeniz Varmı?*</label> </div>
+                    <input data-val="true" name="belgenizvarmı" required="required" type="radio" value="Erkek" aria-required="true">Erkek
+                    <input data-val="true" style="margin-left:20px;" name="belgenizvarmı" required="required" type="radio" value="Kadın" aria-required="true">Kadın
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-8"><label>Çocugunuz Varmı?*</label> </div>
+                    <input data-val="true" name="cocuk" required="required" type="radio" value="Evet" aria-required="true">Evet
+                    <input data-val="true" style="margin-left:20px;" name="cocuk" required="required" type="radio" value="hayır" aria-required="true">Hayır
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4"><label>Askerlik Durumunuz?*</label> </div>
+                    <input data-val="true" name="asker" required="required" type="radio" value="yaptım" aria-required="true">Yaptım
+                    <input data-val="true" style="margin-left:20px;" name="asker" required="required" type="radio" value="yapmadım" aria-required="true">Yapmadım
+                    <input data-val="true" name="asker" required="required" type="radio" value="muaf" aria-required="true">Muaf
+                    <input data-val="true" style="margin-left:20px;" name="asker" required="required" type="radio" value="Tecilli" aria-required="true">Tecilli
+                </div>
+            </div>
+        </div>
+
+
+           <div class="row">
+            <div class="col-md-6">
+                <input class="form-control" data-val="true" data-val-required="The boy field is required." id="boy" maxlength="100" name="evtel"
+                    placeholder="Boyunuz(cm) *" required="required" type="text" value="" aria-required="true">
+            </div>
+            <div class="col-md-6">  
+                <input class="form-control" data-val="true" data-val-required="The kilo field is required." id="kilo" name="kilo" placeholder="Kilonuz(kg)*"
+                    required="required" type="text" value="" aria-required="true">
+            </div>
+
+
+
+        </div>
+        <hr>
+            <div class="beceriler">
+<H2>Beceriler</H2>
+<button><span class="glyphicon glyphicon-plus kirmizi"></span> Yeni Ekle</button>
+<textarea style="border-radius:10px;width:1140px; height:120px; " placeholder="Kullanabiliceginiz Alet Ve Makinaları Yazınız"></textarea>
+</div>
+
+<hr>
+
+
+
+    </form>
+
+    <div class="anadiv" style="display:none;">.
+
+        <div class="bor">
+            <div class="col-md-10" style="border:1px solid black;height:180px;">
+                <div class="row">
+                    <div style="height:33%; width:100%; border:1px solid red;">
+                        <div class="col-md-4 bor" style="height:100%">Fotoğrafınız:</div>
+                        <div class="col-md-8 bor" style="height:100%"><input type="file" name="fileupload" class="form-control"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="height:33%; width:100%; border:1px solid red;">
+                        <input type="text" class="form-control" placeholder="Başvuruda bulundugunuz iş veya bölüm">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div style="height:33%; width:100%; border:1px solid red;">
+                        <div class="col-md-4 bor" style="height:100%">Başvuru Şekli</div>
+                        <div class="col-md-8 bor" style="height:100%"><input type="radio">Kendiligimden</input>
+                            <input type="radio" style="margin-left:5%;">İlanınıza Cevap</input>
+                            <input type="radio" style="margin-left:5%;">Tavsiye İle</input>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2" style="border:1px solid yellow ;height:180px;">
+                <img src="images/useravatar.jpg" style="width:100%; float:right;">
+
+            </div>
+            <div style="width:100%;height:900px;border:4px solid cyan;"></div>
+
+        </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

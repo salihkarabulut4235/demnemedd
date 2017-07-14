@@ -1,0 +1,1612 @@
+body{
+	font-family: 'Raleway',Helvetica,Arial,sans-serif; 
+	font-size: 14px;
+	line-height: 24px;
+	max-width: 1600px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+img[src$='.jpg']{
+	background-color: #000;
+}
+/* ie9*/
+.ie9 img[src$=".svg"] {
+  width: 100%; 
+}
+/* ie10 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$=".svg"] {
+    width: 100%; 
+  }
+}
+img {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; 
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media(max-width:768px){
+	.p_t_b_100{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.m_bottom_100{
+		margin-bottom: 50px;
+	}
+}
+.lh_small{
+	line-height:1.18em;
+}
+.lh_medium{
+	line-height:1.22em;
+}
+.lh_large{
+	line-height:1.375em;
+}
+.fs_ex_small{
+	font-size:0.75em;
+}
+.fs_small{
+	font-size:0.812em;
+}
+.fs_medium{
+	font-size:0.875em;
+}
+.fs_big{
+	font-size: 120%;
+}
+strong{
+	font-weight: 600;
+}
+em{
+	font-style: italic;
+}
+.relative{
+	position: relative;
+}
+.button, input[type='button'], input[type='submit']{
+	height: 42px;
+	line-height: 40px;
+	padding: 0px 30px;
+	display: inline-block;
+	border:solid 2px;
+	font-weight: 600 !important;
+	font-size: 14px;
+	background-color: transparent;
+  text-decoration: none !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.button.full-width, .more.full-width{
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+}
+.more{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	border: solid 1px #BAB9B9;
+	color: #BAB9B9;
+	background-color:transparent;
+  -moz-transition: all ease 1s;
+  -webkit-transition: all ease .5s;
+  transition: all ease 1s;
+  display: inline-block;
+  font-size: 11px;
+  text-decoration: none !important;
+  font-weight: 600;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  text-decoration: none;
+}
+.more.brand{
+	color: #A57704;
+	border-color: #A57704;
+}
+.more:hover{
+	background-color: #A57704;
+	border: solid 1px #A57704;
+	color: #fff;
+}
+.more.brand:hover{
+	color: #fff;
+}
+.more.fb{
+	color: #3b5998;
+	font-weight: 600;
+	border-color: #3b5998;
+}
+
+.more.fb:hover{
+	color: #fff;
+	background-color: #3b5998;
+	border-color: #3b5998;
+}
+.more.tw{
+	color: #1da1f2;
+	font-weight: 600;
+	border-color: #1da1f2;
+}
+.more.tw:hover{
+	color: #fff;
+	background-color: #1da1f2;
+	border-color: #1da1f2;
+}
+.no-border{
+	border: none !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5{
+	margin: 0;
+}
+h1,
+.h1 {
+  font-size: 48px;
+}
+h2,
+.h2 {
+  font-size: 42px;
+}
+h3,
+.h3 {
+  font-size: 30px;
+}
+h4,
+.h4 {
+  font-size: 22px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 14px;
+}
+.border-right{
+	border-right: solid 1px;
+}
+.border-left{
+	border-left: solid 1px;
+}
+.border-bottom{
+	border-bottom: solid 1px;
+}
+.border-top{
+	border-top: solid 1px;
+}
+.border{
+	border: solid 1px;
+}
+.sep{
+	height: 4px;
+	width: 50px;
+}
+.bg_cover{
+	background-size: cover;
+	background-position: center center;
+	background-color: #000;
+}
+/* HEADER */
+header{
+	background-color: #000;
+}
+.cnt-header{
+	background-image: url(/media/images/bg_header.jpg);
+	background-position: right center;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+@media (max-width:767px){
+	.cnt-header{
+		background-position: center center;
+	}
+}
+.navbar-default{
+	border: 0;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.navbar-default #service-nav .navbar-nav>li>a {
+	font-size: 11px;
+	font-weight: 600;
+  text-transform: uppercase;
+  color: #a57704;
+}
+.navbar-default #service-nav .navbar-nav.nav-langs>li>a {
+  color: #fff;
+}
+
+.navbar-default #service-nav .navbar-nav>li>a.social{
+	font-size: 13px;
+}
+.navbar-default #primary-nav .navbar-nav>li>a {
+  color: #fff;
+  border-bottom: solid 9px #000;
+  padding-top: 24px;
+  padding-bottom: 15px;
+/*
+  -moz-transition: border-bottom ease 1s;
+  -webkit-transition: border-bottom ease .5s;
+  transition: border-bottom ease 1s;
+*/
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.navbar-default #primary-nav .navbar-nav>li>button{
+	color: #fff;
+	border: 0;
+	border-bottom: solid 9px #000;
+	padding-top: 24px;
+	padding-bottom: 15px;
+/*
+	-moz-transition: all ease 1s;
+	-webkit-transition: all ease .5s;
+	transition: all ease 1s;
+*/
+	font-size: 12px;
+	font-weight: 900;
+	text-transform: uppercase;
+	background: transparent;
+	appearance: normal;
+	-webkit-appearance: none;
+}
+.navbar-default #primary-nav .navbar-nav>li>button:hover{
+  color: #a57704;
+  background-color: transparent;
+  border-bottom: solid 9px #a57704;
+}
+@media (min-width:1200px){
+	.navbar-default #primary-nav .navbar-nav>li>a, .navbar-default #primary-nav .navbar-nav>li>button{
+		margin-right: 10px; /* 10 per siena */
+	}
+}
+@media (max-width:1024px){
+	.navbar-default #primary-nav .navbar-nav>li>a, .navbar-default #primary-nav .navbar-nav>li>button{
+		font-size: 10px;
+		padding: 10px 9px;
+	}
+}
+@media (max-width: 768px){
+	#service-nav .navbar-nav>li {
+	    float: left;
+	}
+	#service-nav .navbar-nav>li a {
+	  padding: 5px;
+	}
+	#service-nav .navbar-nav{
+		margin: 0;
+	}
+	#top-nav{
+		min-height: 30px;
+	}
+}
+.navbar-default #primary-nav .navbar-nav>.active>a, .navbar-default #primary-nav .navbar-nav>.active>a:hover, .navbar-default #primary-nav .navbar-nav>.active>a:focus,.navbar-default #primary-nav .navbar-nav>li>a:hover, .navbar-default #primary-nav .navbar-nav>li>a:focus {
+  color: #a57704;
+  background-color: transparent;
+  border-bottom: solid 9px #a57704;
+}
+
+@media (max-width:767px){
+	.navbar-default #primary-nav .navbar-nav>li>a, .navbar-default #primary-nav .navbar-nav>li>button {
+	  border-bottom: 0;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  font-size: 14px;
+	  text-align: center;
+	}
+	.navbar-default #primary-nav .navbar-nav>.active>a, .navbar-default #primary-nav .navbar-nav>.active>a:hover, .navbar-default #primary-nav .navbar-nav>.active>a:focus,.navbar-default #primary-nav .navbar-nav>li>a:hover, .navbar-default #primary-nav .navbar-nav>li>a:focus {
+	  color: #fff ;
+	  background-color: #a57704;
+	  border-bottom: 0;
+	}
+}
+@media (min-width:768px){
+	.navbar-default #primary-nav .navbar-nav>li>a.ticket, .navbar-default #primary-nav .navbar-nav>li>a.ticket:focus,.navbar-default #primary-nav .navbar-nav>li>a.ticket:hover{
+		background-color: #a57704;
+		padding: 10px;
+		margin-top: 14px;
+		border-bottom: 0;
+		color: #fff;
+	}
+}
+@media (min-width:768px) and (max-width:1024px){
+	.navbar-default #primary-nav .navbar-nav>li>a.ticket, .navbar-default #primary-nav .navbar-nav>li>a.ticket:focus,.navbar-default #primary-nav .navbar-nav>li>a.ticket:hover{
+		margin-top: 0px;
+	}
+}
+.navbar-default  #service-nav .navbar-nav>.active>a, .navbar-default  #service-nav .navbar-nav>.active>a:hover, .navbar-default  #service-nav .navbar-nav>.active>a:focus{
+  color: #fff;
+  background-color: transparent;
+	-webkit-box-shadow: inset 0px -5px 0px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px -5px 0px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px -5px 0px 0px rgba(255,255,255,1);
+}
+.navbar-default  #service-nav .navbar-nav.nav-langs>.active>a, .navbar-default  #service-nav .navbar-nav.nav-langs>.active>a:hover, .navbar-default  #service-nav .navbar-nav.nav-langs>.active>a:focus{
+  color: #a57704;
+  background: transparent;
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,1);
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,1);
+	box-shadow: inset 0px 0px 0px 0px rgba(255,255,255,1);
+}
+#service-nav .bt, .button-small{
+  padding: 7px 24px;
+  margin-top: 7px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.nav.nav-langs>li>a{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.caret-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+    
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: #000;
+  border: 1px solid #000;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 20px 20px;
+    clear: both;
+    font-weight: 900;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    background-color: #a67909;
+}
+.cnt-nav-fix{
+	height: 190px;
+}
+#nav_bar.navbar-fixed{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a57704;
+}
+@media (min-width: 768px){
+	.navbar-right {
+	  margin-right: 0;
+	}
+}
+/* SEARCH */
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+/*
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+*/
+	height: auto;
+	z-index: 100000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.md-show ~ .md-overlay ~ .page-error{
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+
+}
+/* Content styles */
+.md-content {
+	color: #fff;
+	background: #a57704;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px 40px 30px;
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: 1.15em;
+	max-width: 1200px;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 0;
+}
+
+.md-effect-search{
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.md-effect-search .md-content {
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	opacity: 0;
+}
+
+.md-show.md-effect-search .md-content {
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+	border-radius: 0 0 3px 3px;
+	opacity: 1;
+}
+#modal-search input{
+	border: 0;
+	border-bottom: solid 3px #fff;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	background-color: transparent;
+	color: #fff;
+	box-shadow:none;
+}
+#modal-search input::-webkit-input-placeholder {
+   color: #fff;
+}
+
+#modal-search input:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+#modal-search input::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+#modal-search input:-ms-input-placeholder {  
+   color: #fff;  
+}
+.input-group .input-group-button, .input-group .input-group .form-input {
+    display: table-cell;
+}
+
+.input-group-button {
+    position: relative;
+    font-size: 0rem;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+#modal-search button,#modal-search button:hover{
+	border:0;
+	color: #fff;
+	background-color:transparent;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none !important;
+	appearance: normal;
+	-webkit-appearance: none;
+	margin: 0 10px;
+}
+/* FOOTER */
+footer .bottom{
+	background-image: url(/media/images/bg_footer.png);
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 322px;
+}
+.links_footer {
+	list-style: none;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.links_footer li{
+	padding: 10px 0;
+	border-bottom: solid 1px #dddedf;
+	line-height: 16px;
+}
+@media (min-width:768px){
+	.social-foot{
+		float: right;
+	}
+}
+.social-foot li{
+	float: left;
+	margin-right: 20px;
+}
+.social-foot li:last-child{
+	margin-right: 0px;
+}
+/* LUOGHI */
+.head_luoghi{
+	width: 100%;
+	padding: 200px 0;
+}
+@media (max-width:768px){
+	.head_luoghi{
+		padding: 100px 0;
+	}
+}
+.head_luoghi h1{
+  font-size: 36px;
+}
+
+	.bg_cattedrale.it{
+		background-image: url(/media/images/title-cattedrale-it.svg);
+		background-size: 90%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_planimetria.it{
+		background-image: url(/media/images/title-planimetria-it.svg);
+		background-size: 90%;
+		background-position: 30px top;
+		background-repeat: no-repeat;
+		padding-top: 80px;
+	}
+	.bg_opere.it{
+		background-image: url(/media/images/title-opere-it.svg);
+		background-size: 70%;
+		background-position: right 50px;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_battistero.it{
+		background-image: url(/media/images/title-battistero-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_cripta.it{
+		background-image: url(/media/images/title-cripta-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_pavimento.it{
+		background-image: url(/media/images/title-pavimento-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_libreria.it{
+		background-image: url(/media/images/title-libreria-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_panorama.it{
+		background-image: url(/media/images/title-panorama-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_museo.it{
+		background-image: url(/media/images/title-museo-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_portacielo.it{
+		background-image: url(/media/images/title-portacielo-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_sotto_duomo.it{
+		background-image: url(/media/images/title-sotto_duomo-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_oratorio.it{
+		background-image: url(/media/images/title-oratorio-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_luoghi.it{
+		background-image: url(/media/images/title-luoghi-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_cappelle.it{
+		background-image: url(/media/images/title-cappelle-it.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_capolavori.it{
+		background-image: url(/media/images/text-capolavori-it.png);
+		background-size: 70%;
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+	.bg_piano_terra.it{
+		background-image: url(/media/images/text-pianoterra-it.png);
+		background-size: 80%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_primo_piano.it{
+		background-image: url(/media/images/text-primopiano-it.png);
+		background-size: 70%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_ultimo_piano.it{
+		background-image: url(/media/images/text-ultimopiano-it.png);
+		background-size: 70%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_opera.it{
+		background-image: url(/media/images/text-opera-it.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_storia.it{
+		background-image: url(/media/images/text-storia-it.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_cattedrale.en{
+		background-image: url(/media/images/title-cattedrale-en.png);
+		background-size: 90%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_planimetria.en{
+		background-image: url(/media/images/title-planimetria-en.png);
+		background-size: 90%;
+		background-position: 30px top;
+		background-repeat: no-repeat;
+		padding-top: 80px;
+	}
+	.bg_opere.en{
+		background-image: url(/media/images/title-opere-en.png);
+		background-size: 70%;
+		background-position: right 50px;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_battistero.en{
+		background-image: url(/media/images/title-battistero-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_cripta.en{
+		background-image: url(/media/images/title-cripta-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_pavimento.en{
+		background-image: url(/media/images/title-pavimento-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_libreria.en{
+		background-image: url(/media/images/title-libreria-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_panorama.en{
+		background-image: url(/media/images/title-panorama-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_museo.en{
+		background-image: url(/media/images/title-museo-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_portacielo.en{
+		background-image: url(/media/images/title-portacielo-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_sotto_duomo.en{
+		background-image: url(/media/images/title-sotto_duomo-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_oratorio.en{
+		background-image: url(/media/images/title-oratorio-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_luoghi.en{
+		background-image: url(/media/images/title-luoghi-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_cappelle.en{
+		background-image: url(/media/images/title-cappelle-en.png);
+		background-size: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 90px;
+	}
+	.bg_capolavori.en{
+		background-image: url(/media/images/text-capolavori-en.png);
+		background-size: 70%;
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+	.bg_piano_terra.en{
+		background-image: url(/media/images/text-pianoterra-en.png);
+		background-size: 80%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_primo_piano.en{
+		background-image: url(/media/images/text-primopiano-en.png);
+		background-size: 70%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_ultimo_piano.en{
+		background-image: url(/media/images/text-ultimopiano-en.png);
+		background-size: 70%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_opera.en{
+		background-image: url(/media/images/text-opera-en.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+	.bg_storia.en{
+		background-image: url(/media/images/text-storia-en.png);
+		background-position: right top;
+		background-repeat: no-repeat;
+		padding-top: 60px;
+	}
+
+@media (max-width:768px){
+	.bg_cattedrale.it,
+	.bg_planimetria.it,
+	.bg_opere.it,
+	.bg_battistero.it,	
+	.bg_cripta.it,
+	.bg_pavimento.it,
+	.bg_libreria.it,	
+	.bg_panorama.it,	
+	.bg_museo.it,
+	.bg_portacielo.it,
+	.bg_sotto_duomo.it,
+	.bg_sotto_duomo.en,
+	.bg_oratorio.it,	
+	.bg_luoghi.it,
+	.bg_cappelle.it,	
+	.bg_capolavori.it,
+	.bg_piano_terra.it,	
+	.bg_primo_piano.it,	
+	.bg_ultimo_piano.it,
+	.bg_opera.it,
+	.bg_storia.it,	
+	.bg_cattedrale.en,
+	.bg_planimetria.en,
+	.bg_opere.en,
+	.bg_battistero.en,	
+	.bg_cripta.en,
+	.bg_pavimento.en,
+	.bg_libreria.en,	
+	.bg_panorama.en,	
+	.bg_museo.en,
+	.bg_portacielo.en,
+	.bg_oratorio.en,	
+	.bg_luoghi.en,
+	.bg_cappelle.en,	
+	.bg_capolavori.en,
+	.bg_piano_terra.en,	
+	.bg_primo_piano.en,	
+	.bg_ultimo_piano.en,
+	.bg_opera.en,
+	.bg_storia.en{
+		background-size: 100%;
+	}
+}
+
+.bg_img_left{
+	background-size: contain;
+	background-position: -50% bottom;
+	background-repeat: no-repeat;
+}
+.block_did_b_r{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.block_did_b_l{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 1px;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 1px; 
+}
+/*
+.cnt-info{
+	height: 100%;
+}
+*/
+p.dida{
+	line-height: 18px;
+}
+.bg_luogo{
+	background-size: cover;
+	background-position: center center;
+	padding-top: 60px;
+	position: relative;
+	left: 15px;
+	width: 100%;
+	height: auto;
+}
+/*
+.bg_luogo:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 100%;
+	background-color: #fff;
+}
+.bg_luogo:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15px;
+	height: 100%;
+	background-color: #fff;
+}
+*/
+.box-luogo{
+	padding: 70px 30px 40px 30px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+/*
+.box-luogo h2{
+	position: relative;
+}
+.box-luogo h2 span:nth-child(1){
+	position: absolute;
+	z-index: 2;
+}
+.box-luogo h2 span:nth-child(2){
+	color: #f0eef2;
+	font-size: 55px;
+	position: absolute;
+	top:10px;
+	left: 30px;
+	z-index: 1;
+}
+@media (max-width:700px){
+	.box-luogo h2 span:nth-child(2){
+		display: none;
+	}
+}
+*/
+.box-downlaod{
+	position: relative;
+	padding: 20px;
+	display: block;
+}
+/*
+.box-downolad:before{
+  content: "\f019";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #fff;
+  font-size: 18px;
+  padding-right: 0.5em;
+	content: '';
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 30px 30px 0;
+	border-color: transparent #a57704 transparent transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+*/
+.box-downolad:before{
+    content: "\f000";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+}
+/* NEWS */
+	.bg_news{
+		background-image: url(/media/images/title-news.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+@media (max-width:768px){
+	.bg_news{
+		background-size: 100%;
+		background-position: 0px 70px;
+	}
+}
+.carousel-indicators li{
+	margin: 0 1px;
+}
+/* ARCHIVIO */
+	.bg_archivio.it{
+		background-image: url(/media/images/title-archivio-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_pubblicazioni.it{
+		background-image: url(/media/images/title-pubblicazioni-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_archivio.en{
+		background-image: url(/media/images/title-archivio-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_pubblicazioni.en{
+		background-image: url(/media/images/title-pubblicazioni-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+@media (max-width:768px){
+	.bg_archivio.it, .bg_archivio.en,
+	.bg_pubblicazioni.it,.bg_pubblicazioni.en{
+		background-size: 100%;
+		background-position: 0px 70px;
+	}
+}
+/* CONTATTI */
+	.bg_contatti.it{
+		background-image: url(/media/images/title-contatti-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_contatti.en{
+		background-image: url(/media/images/title-contatti-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+@media (max-width:768px){
+	.bg_contatti.it,.bg_contatti.en{
+		background-size: 100%;
+		background-position: 0px 70px;
+	}
+}
+.social li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.social li a{
+	background-color: #cbcbcb;
+	color: #fff;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+}
+#map{
+	width: 100%;
+	height: 600px;
+}
+@media(max-width:1024px){
+	#map{
+		height: 400px;
+	}
+}
+/* 404 */
+.bg_404{
+	background-image: url(/media/images/title-404.png);
+	background-position: 100px 70px;
+	background-repeat: no-repeat;
+}
+
+@media(max-width:667px){
+	.p_right_60{
+		padding-right: 15px;
+	}
+	.p_left_60{
+		padding-left: 15px;
+	}
+}
+/* OPERA */
+.box-brand{
+	background-color: #a57704 !important;
+	padding: 30px;
+	display: block;
+	margin-top: 20px;
+	text-decoration: none;
+}
+a.box-brand:hover{
+	text-decoration: none !important;
+}
+/* HOME */
+.button-home-luoghi, .button-visita-luoghi{
+	width: 100%;
+	padding: 75px 0;
+	text-align: center;
+	border: solid 1px #fff;
+	color: #fff;
+  -moz-transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  background: rgba(165,119,4,0);
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+}
+@media (min-width:1024px){
+	.button-home-luoghi:hover, .button-visita-luoghi:hover{
+	  text-decoration: none;
+		border: solid 1px #a57704;
+	  background: rgba(165,119,4,.8);
+	  color: #fff;
+	}
+}
+	.button-home-luoghi.over, .button-visita-luoghi.over{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+		margin-left: -40%;
+		margin-top: -40%;
+	/*   transform: translate(-50%, -50%); */
+		width: 80%;
+		height: 80%;
+		text-align: center;
+	}
+.button-home-luoghi.over h3, .button-visita-luoghi h3{
+/*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.button-visita-luoghi .more{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+}
+@media (max-width:768px){
+	.button-home-luoghi.over h3, .button-visita-luoghi h3{
+		font-size: 18px;
+	}
+	.button-home-luoghi, .button-visita-luoghi{
+		padding: 40px 10px;
+	}
+	.button-home-luoghi.over, .button-visita-luoghi.over{
+		width: 90%;
+		height: 90%;
+		margin-left: -45%;
+		margin-top: -45%;
+	}
+}
+.button-visita-luoghi h3 small{
+	font-size: 16px;
+	line-height: 20px;
+}
+.button-visita-luoghi h3:nth-of-type(2){
+	display: none;
+	font-size: 24px;
+}
+.button-visita-luoghi:hover h3:nth-of-type(1){
+	display: none;
+}
+.button-visita-luoghi:hover h3:nth-of-type(2){
+	display: block;
+}
+.luoghi_home_full_1{
+/* 	width: 100%; */
+	padding-top: 165px;
+	padding-bottom: 165px;
+	background-position: center center;
+	background-size: cover;
+	background-color: #000;
+}
+.luoghi_home_full_2, .luoghi_home_half{
+/* 	width: 100%; */
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-position: center center;
+	background-size: cover;
+	background-color: #000;
+}
+@media (max-width:667px){
+	.luoghi_home_full_1,.luoghi_home_full_2, .luoghi_home_half{
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+	
+.bg_siena{
+	background-image: url(/media/images/title-siena.png);
+	background-size: 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding-top: 90px;
+}
+.bg_vitual_tour{
+	background-image: url(/media/images/text-virtual-tour.png);
+	background-size: 100%;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.separator1 {
+  width: 100%;
+	height: 400px;
+  position: relative;
+}
+.separator1 .bg {
+	background: url(/media/images/bg_parallax.jpg) no-repeat center;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 400px;
+}
+@media only screen and (min-width: 1100px) {
+	.separator1 {
+		height: 500px;
+	}
+	.separator1 .bg{
+		background-attachment: fixed !important;
+		height: 500px;
+	}
+}
+	.bg_servizi.it{
+		background-image: url(/media/images/text-servizi-home-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_servizi.en{
+		background-image: url(/media/images/text-servizi-home-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+@media (max-width:768px){
+	.bg_servizi.it, .bg_servizi.en{
+		background-size: 100%;
+		background-position: 0px 70px;
+	}
+}
+.col-service-home{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position:relative;
+	overflow:hidden;
+	padding-bottom:50%;
+}
+@media (min-width:1024px){
+	.col-service-home{
+		padding-bottom:25%;
+	}
+}
+.dummy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 90%;
+	height: 90%;
+	border: solid 1px #fff;
+	text-align: center;
+	font-weight: 400;
+}
+.dummy a, .dummy a:hover{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 80%;
+  text-decoration: none;
+  color: #fff;
+}
+.dummy a h2{
+	font-size: 32px;
+	line-height: 30px;
+}
+.dummy a img{
+	margin: 0 auto;
+}
+/* VISITA */
+	.bg_visita.it{
+		background-image: url(/media/images/title-visita-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.home.bg_visita.it{
+		background-image: url(/media/images/title-visita-it.png);
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	
+	.bg_complesso_museale.it{
+		background-image: url(/media/images/title-complesso-museale-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_visita.en{
+		background-image: url(/media/images/title-visita-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.home.bg_visita.en{
+		background-image: url(/media/images/title-visita-en.png);
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	
+	.bg_complesso_museale.en{
+		background-image: url(/media/images/title-complesso-museale-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_pass{
+		background-image: url(/media/images/text-pass.png);
+		background-position: 100px 0px;
+		background-repeat: no-repeat;
+	}
+
+@media (max-width:768px){
+	{
+		background-position: 0px 70px;
+		background-size: 100%;
+	}
+	.home.bg_visita.it{
+		background-size: 100%;
+	}
+	
+	.bg_visita.it, .bg_complesso_museale.it,.bg_visita.en, .bg_complesso_museale.en, .bg_pass{
+		background-position: 0px 70px;
+		background-size: 100%;
+	}
+}
+.list-luoghi{
+	width: 100%;
+	display: table;
+}
+.list-luoghi li{
+	display: inline-block;
+	width: 14%;
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 10px;
+}
+.num-bigger{
+	font-size: 60px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	line-height: 50px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+.box-opa {
+	min-height: 230px;
+}
+
+html,body {
+	height:100%;
+}
+@media(min-width:700px){      
+	.row-flex, .row-flex > div[class*='col-'] {  
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    flex:1 1 auto;
+	}
+	
+	.row-flex-2, .row-flex-2 > div[class*='col-'] {  
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    flex:1 1;
+	}
+	
+	.row-flex-wrap {
+		-webkit-flex-flow: row wrap;
+	    align-content: flex-start;
+	    flex:0;
+	}
+	
+	.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+		 margin:-.2px; /* hack adjust for wrapping */
+	}
+	
+	.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div.cnt-info,.row-flex-2 > div[class*='col-'] div.cnt-info {
+		width:100%;
+	}
+	
+	
+	.flex-col {
+	    display: flex;
+	    display: -webkit-flex;
+	    flex: 1 100%;
+		flex-flow: column nowrap;
+	}
+	
+	.flex-grow {
+		display: flex;
+		-webkit-flex: 2;
+		flex: 2;
+	}
+}
+/* DIDATTICA */
+	.bg_didattica.it{
+		background-image: url(/media/images/title-didattica-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_percorsi.it{
+		background-image: url(/media/images/title-percorsi-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_visite.it{
+		background-image: url(/media/images/title-visite-it.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_didattica.en{
+		background-image: url(/media/images/title-didattica-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_percorsi.en{
+		background-image: url(/media/images/title-percorsi-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+	.bg_visite.en{
+		background-image: url(/media/images/title-visite-en.png);
+		background-position: 100px 70px;
+		background-repeat: no-repeat;
+	}
+@media (max-width:1024px){
+	
+	.bg_didattica.it,
+	.bg_percorsi.it,
+	.bg_visite.it,
+	.bg_didattica.en,
+	.bg_percorsi.en,
+	.bg_visite.en{
+		background-position: 10% 70px;
+		background-size: 80%;
+	}
+}
